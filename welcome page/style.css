@@ -1,0 +1,426 @@
+/* =====================================================
+   ജന്തു-ശ്രീ — WELCOME PAGE
+   ===================================================== */
+
+
+/* ---------- BASIC SETTINGS ---------- */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 30px 15px;
+
+    font-family: "Trebuchet MS", Arial, sans-serif;
+
+    min-height: 100vh;
+
+    text-align: center;
+
+    color: #3d2b1f;
+
+    background:
+        linear-gradient(
+            rgba(232, 247, 220, 0.82),
+            rgba(255, 248, 220, 0.9)
+        ),
+        linear-gradient(
+            180deg,
+            #bde7a5,
+            #eaf5d5,
+            #f7e9bd
+        );
+
+    overflow-x: hidden;
+}
+
+
+/* ---------- DECORATIVE LEAVES ---------- */
+
+.leaf {
+    position: fixed;
+
+    font-size: 70px;
+
+    opacity: 0.35;
+
+    z-index: -1;
+}
+
+.leaf1 {
+    top: 20px;
+    left: 10px;
+
+    transform: rotate(-25deg);
+}
+
+.leaf2 {
+    top: 80px;
+    right: 10px;
+
+    transform: rotate(25deg);
+}
+
+.leaf3 {
+    bottom: 30px;
+    left: 20px;
+
+    transform: rotate(20deg);
+}
+
+
+/* ---------- TOP PAWS ---------- */
+
+.top-paws {
+    font-size: 28px;
+
+    margin-bottom: 10px;
+
+    letter-spacing: 5px;
+}
+
+
+/* ---------- HEADER ---------- */
+
+header {
+    margin-top: 10px;
+}
+
+h1 {
+    margin: 0;
+
+    font-size: clamp(55px, 12vw, 100px);
+
+    font-weight: 900;
+
+    color: #315f2c;
+
+    text-shadow:
+        3px 3px 0 #ffffff,
+        5px 5px 0 rgba(70, 100, 40, 0.15);
+}
+
+h2 {
+    margin-top: 5px;
+    margin-bottom: 10px;
+
+    font-size: clamp(24px, 5vw, 40px);
+
+    color: #5a422d;
+}
+
+
+/* ---------- SMALL PAWS ---------- */
+
+.small-paws {
+    font-size: 20px;
+
+    margin: 15px;
+}
+
+
+/* ---------- ANIMAL ROW ---------- */
+
+.animal-row {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    gap: 12px;
+
+    max-width: 700px;
+
+    margin: 20px auto;
+}
+
+.animal {
+
+    width: 85px;
+    height: 85px;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    font-size: 55px;
+
+    background: rgba(255, 255, 255, 0.65);
+
+    border-radius: 50%;
+
+    box-shadow:
+        0 5px 12px rgba(60, 70, 40, 0.18);
+
+    transition: transform 0.3s;
+}
+
+
+/* Animal hover */
+
+.animal:hover {
+
+    transform:
+        translateY(-10px)
+        rotate(5deg)
+        scale(1.08);
+}
+
+
+/* ---------- INTRO ---------- */
+
+.intro {
+
+    margin: 25px auto;
+
+    max-width: 700px;
+}
+
+.intro-text {
+
+    font-size: clamp(20px, 4vw, 30px);
+
+    font-weight: bold;
+
+    color: #4a3828;
+}
+
+.line {
+
+    color: #39733a;
+
+    font-size: 20px;
+}
+
+
+/* ---------- WARNING BOX ---------- */
+
+.warning {
+
+    max-width: 650px;
+
+    margin: 25px auto;
+
+    padding: 25px;
+
+    background: rgba(255, 255, 255, 0.75);
+
+    border: 3px dashed #7ba35a;
+
+    border-radius: 25px;
+
+    box-shadow:
+        0 8px 20px rgba(70, 80, 50, 0.15);
+}
+
+.warning h3 {
+
+    margin-top: 0;
+
+    font-size: clamp(22px, 5vw, 32px);
+
+    color: #c7472f;
+}
+
+.warning p {
+
+    font-size: 20px;
+
+    margin: 8px;
+}
+
+.snake-text {
+
+    color: #365d2c;
+}
+
+.snake-text strong {
+
+    font-size: 25px;
+
+    color: #328044;
+}
+
+.safe {
+
+    font-size: 17px !important;
+
+    color: #725d45;
+}
+
+
+/* ---------- MORE ANIMALS ---------- */
+
+.animal-world {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    gap: 15px;
+
+    max-width: 800px;
+
+    margin: 25px auto;
+}
+
+.animal-card {
+
+    font-size: 55px;
+
+    width: 85px;
+    height: 85px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background: rgba(255, 255, 255, 0.55);
+
+    border-radius: 25px;
+
+    box-shadow:
+        0 5px 12px rgba(70, 70, 50, 0.15);
+
+    transition: 0.3s;
+}
+
+.animal-card:hover {
+
+    transform:
+        translateY(-12px)
+        rotate(-5deg);
+
+    background: rgba(255, 255, 255, 0.9);
+}
+
+
+/* ---------- ENTER SECTION ---------- */
+
+.enter-section {
+
+    margin: 35px auto;
+}
+
+
+/* ---------- ENTER BUTTON ---------- */
+
+button {
+
+    border: none;
+
+    padding: 20px 40px;
+
+    border-radius: 50px;
+
+    font-size: clamp(20px, 4vw, 30px);
+
+    font-weight: bold;
+
+    color: white;
+
+    background: #3f7d32;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 7px 0 #285522,
+        0 12px 25px rgba(40, 80, 30, 0.25);
+
+    transition: 0.2s;
+}
+
+
+/* Button hover */
+
+button:hover {
+
+    transform: translateY(-4px);
+
+    background: #4f913f;
+
+    box-shadow:
+        0 11px 0 #285522,
+        0 16px 25px rgba(40, 80, 30, 0.25);
+}
+
+
+/* Button click */
+
+button:active {
+
+    transform: translateY(5px);
+
+    box-shadow:
+        0 2px 0 #285522;
+}
+
+
+/* ---------- BOTTOM ---------- */
+
+.bottom {
+
+    margin-top: 25px;
+
+    padding-bottom: 20px;
+
+    color: #4b673d;
+
+    font-size: 18px;
+}
+
+.bottom p {
+
+    font-size: 22px;
+
+    font-weight: bold;
+}
+
+
+/* =====================================================
+   MOBILE
+   ===================================================== */
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 20px 10px;
+    }
+
+    .animal {
+        width: 65px;
+        height: 65px;
+
+        font-size: 42px;
+    }
+
+    .animal-card {
+        width: 65px;
+        height: 65px;
+
+        font-size: 42px;
+    }
+
+    .warning {
+        padding: 18px;
+    }
+
+    button {
+        width: 90%;
+
+        padding: 17px 20px;
+    }
+
+}

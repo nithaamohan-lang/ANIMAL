@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>ജന്തു-ശ്രീ🐾</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&family=Nunito:wght@400;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- ===== HEADER ===== -->
+
+  <header class="hero">
+
+    <div class="hero-critters" aria-hidden="true">
+      🐶 🐱 🐮 🐔 🦜 🐴 🐷 🐸
+    </div>
+
+    <h1>ജന്തു-ശ്രീ🐾</h1>
+
+    <p class="subtitle">
+      Finally, technology that solves absolutely nothing.
+    </p>
+
+  </header>
+
+
+  <main class="app-shell">
+
+    <!-- ===== SCREEN 1: PICK AN ANIMAL ===== -->
+
+    <section id="pick-screen" class="screen">
+
+      <h2>Who would you like to talk to?</h2>
+
+      <div id="animal-grid" class="animal-grid">
+        <!-- Animal buttons are inserted here by script.js -->
+      </div>
+
+    </section>
+
+
+    <!-- ===== SCREEN 2: CONVERSATION ===== -->
+
+    <section id="chat-screen" class="screen hidden">
+
+      <div class="chat-layout">
+
+
+        <!-- ===== CHAT AREA ===== -->
+
+        <div class="chat-area">
+
+          <div class="chat-header">
+
+            <button
+              id="back-btn"
+              class="back-btn"
+              aria-label="Choose a different animal"
+            >
+              &larr; Choose another animal
+            </button>
+
+            <div class="current-animal">
+
+              <span
+                id="current-emoji"
+                class="current-emoji"
+              >
+                🐶
+              </span>
+
+              <span id="current-name">
+                Dog
+              </span>
+
+            </div>
+
+            <span
+              id="current-mood"
+              class="mood-badge"
+            >
+              😄 Happy
+            </span>
+
+          </div>
+
+
+          <!-- ===== CONVERSATION ===== -->
+
+          <div
+            id="conversation"
+            class="conversation"
+            aria-live="polite"
+          >
+            <!-- Messages appear here -->
+          </div>
+
+
+          <!-- ===== THINKING INDICATOR ===== -->
+
+          <div
+            id="thinking"
+            class="thinking hidden"
+          >
+
+            <span id="thinking-emoji">
+              🐶
+            </span>
+
+            is thinking
+
+            <span class="dots">
+              <span>.</span>
+              <span>.</span>
+              <span>.</span>
+            </span>
+
+          </div>
+
+
+          <!-- ===== MESSAGE FORM ===== -->
+
+          <form
+            id="message-form"
+            class="message-form"
+          >
+
+            <button
+              type="button"
+              id="mic-btn"
+              class="icon-btn"
+              title="Speak your message"
+            >
+              🎤
+            </button>
+
+            <input
+              type="text"
+              id="message-input"
+              placeholder="Type something to say..."
+              autocomplete="off"
+            />
+
+            <button
+              type="submit"
+              class="send-btn"
+            >
+              💬 Send
+            </button>
+
+          </form>
+
+
+          <p
+            id="mic-status"
+            class="mic-status"
+          ></p>
+
+        </div>
+
+
+        <!-- ===== FAKE SCIENCE SIDE PANEL ===== -->
+
+        <aside class="science-panel">
+
+          <h3>
+            Totally Real Research Data™
+          </h3>
+
+          <div class="science-grid">
+
+            <div class="stat">
+
+              <span class="stat-value">
+                3%
+              </span>
+
+              <span class="stat-label">
+                Communication Accuracy
+              </span>
+
+            </div>
+
+
+            <div class="stat">
+
+              <span class="stat-value">
+                0.1%
+              </span>
+
+              <span class="stat-label">
+                Scientific Usefulness
+              </span>
+
+            </div>
+
+
+            <div class="stat">
+
+              <span class="stat-value">
+                0%
+              </span>
+
+              <span class="stat-label">
+                Chance of Understanding
+              </span>
+
+            </div>
+
+
+            <div class="stat">
+
+              <span class="stat-value">
+                ₹0
+              </span>
+
+              <span class="stat-label">
+                Research Funding Needed
+              </span>
+
+            </div>
+
+          </div>
+
+        </aside>
+
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- ===== FOOTER ===== -->
+
+  <footer class="footer">
+
+    Made with 🐾 and questionable scientific ethics.
+    No animals were understood in the making of this app.
+
+  </footer>
+
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
+```
